@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Automação de Planilhas Excel",
     description:
-      "Sistema de automação para processamento e análise de grandes volumes de dados em planilhas Excel. Geração automática de relatórios, validação de dados e integração com bancos de dados corporativos.",
+      "Sistema de automação e validação de dados em planilhas Excel, desenvolvido para otimizar processos manuais de cadastro, com foco em redução de erros, padronização de informações e ganho de produtividade.",
     tags: ["Node.js", "Excel", "Electron", "Puppeteer"],
     year: "2025",
     icon: FileSpreadsheet,
@@ -25,7 +25,7 @@ const projects = [
     title: "API Gateway Escalável",
     description:
       "Sistema de gateway de API com rate limiting, autenticação JWT e balanceamento de carga. Suporta milhares de requisições por minuto com alta disponibilidade.",
-    tags: ["Node.js", "Redis", "Docker", "AWS"],
+    tags: ["Node.js", "Docker", "AWS"],
     year: "2026",
     icon: Server,
     gradient: "from-blue-medium to-blue-light",

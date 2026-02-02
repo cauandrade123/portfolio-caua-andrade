@@ -1,18 +1,20 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Github, ArrowUpRight } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowUpRight, Target } from "lucide-react";
 
 const contactLinks = [
+
   {
     name: "Email",
-    value: "contato@cauaandrade.dev",
-    href: "mailto:contato@cauaandrade.dev",
+    value: "cauaandradeconde@gmail.com",
+    target: "_blank",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=cauaandradeconde@gmail.com",
     icon: Mail,
   },
   {
     name: "LinkedIn",
     value: "/in/cauaandrade",
-    href: "https://www.linkedin.com/in/cau%C3%A3-a-cond%C3%A9-965b62302/",
+    href: "https://www.linkedin.com/in/cauaandradedev/",
     icon: Linkedin,
   },
   {
@@ -29,11 +31,11 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="relative py-12 sm:py-16 overflow-hidden">
-      {/* Gradient background */}
+     
       <div className="absolute inset-0 bg-gradient-to-br from-blue-dark via-blue-primary to-blue-medium" />
       
-      {/* Animated gradient overlay */}
-      <motion.div
+    
+        <motion.div
         animate={{ 
           backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"] 
         }}
@@ -45,7 +47,7 @@ export function ContactSection() {
         }}
       />
 
-      {/* Floating orbs */}
+
       <motion.div
         animate={{ y: [0, -30, 0], x: [0, 20, 0] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
@@ -100,18 +102,18 @@ export function ContactSection() {
           >
             {contactLinks.map((link, index) => (
               <motion.a
-                key={link.name}
-                href={link.href}
-                target={link.name !== "Email" ? "_blank" : undefined}
-                rel={link.name !== "Email" ? "noopener noreferrer" : undefined}
-                initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
-                transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                whileHover={{ y: -6, scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="group relative p-4 bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-xl hover:bg-primary-foreground/10 hover:border-primary-foreground/20 transition-all duration-300"
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                  animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
+                  transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+                  whileHover={{ y: -6, scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="group relative p-4 bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-xl hover:bg-primary-foreground/10 hover:border-primary-foreground/20 transition-all duration-300"
               >
-                {/* Glow effect on hover */}
+            
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-light/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10" />
                 
                 <div className="flex items-center justify-between mb-2 sm:mb-3">

@@ -23,7 +23,7 @@ const stacks = [
   {
     category: "Cloud & Infra",
     items: [
-      { name: "AWS", icon: Cloud, description: "Lambda, EC2, S3, RDS" },
+      { name: "AWS", icon: Cloud, description: "Lambda, ECS, S3, RDS" },
       { name: "Docker", icon: Container, description: "Containerização" },
       { name: "CI/CD", icon: GitBranch, description: "GitHub Actions" },
     ],

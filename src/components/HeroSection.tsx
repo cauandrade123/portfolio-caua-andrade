@@ -4,10 +4,10 @@ import { Code2, Server, Database, Download } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Animated gradient background */}
+     
       <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-background to-gray-100" />
       
-      {/* Floating gradient orbs */}
+      
       <motion.div
         animate={{ 
           scale: [1, 1.2, 1],
@@ -25,7 +25,6 @@ export function HeroSection() {
         className="absolute bottom-1/4 -right-32 w-72 h-72 bg-gradient-to-br from-blue-medium/20 to-blue-dark/10 rounded-full blur-3xl"
       />
       
-      {/* Grid pattern */}
       <div 
         className="absolute inset-0 opacity-[0.02]"
         style={{
@@ -37,7 +36,7 @@ export function HeroSection() {
 
       <div className="container relative z-10 pt-12 sm:pt-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Floating icons - hidden on very small screens */}
+        
           <div className="absolute inset-0 pointer-events-none hidden sm:block">
             <motion.div
               animate={{ y: [0, -15, 0] }}
@@ -113,7 +112,7 @@ export function HeroSection() {
             </a>
 
             <a
-              href="/cv.pdf"
+              href=""
               download
               className="group inline-flex items-center justify-center w-full sm:w-auto px-5 sm:px-6 py-2.5 sm:py-3 text-sm font-medium text-foreground border border-gray-300 rounded-full hover:border-blue-primary/50 hover:bg-blue-primary/5 transition-all duration-300"
             >

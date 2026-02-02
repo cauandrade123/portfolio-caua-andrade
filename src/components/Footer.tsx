@@ -5,7 +5,7 @@ export function Footer() {
 
   return (
     <footer className="relative py-6 bg-gradient-to-r from-blue-dark via-blue-primary to-blue-medium overflow-hidden">
-      {/* Subtle pattern */}
+      
       <div 
         className="absolute inset-0 opacity-5"
         style={{

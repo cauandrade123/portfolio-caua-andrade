@@ -12,7 +12,7 @@ const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
   e.preventDefault();
   const target = document.querySelector(href);
   if (target) {
-    // Set active link for animation
+    
     if (setActiveLink) {
       setActiveLink(href);
       setTimeout(() => setActiveLink(""), 600);
@@ -60,7 +60,7 @@ export function Header() {
           whileTap={{ scale: 0.95 }}
           className="relative text-xl sm:text-2xl font-bold tracking-tight text-foreground"
         >
-          <span className="text-gradient">CA</span>
+          <span className="text-gradient"></span>
           <motion.span
             className="absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-primary to-blue-light"
             initial={{ width: 0 }}
@@ -69,7 +69,7 @@ export function Header() {
           />
         </motion.a>
 
-        {/* Desktop Navigation */}
+        
         <ul className="hidden md:flex items-center gap-6 lg:gap-8">
           {navLinks.map((link, index) => (
             <motion.li 
@@ -119,7 +119,7 @@ export function Header() {
           </motion.li>
         </ul>
 
-        {/* Mobile Menu Button */}
+        
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -152,7 +152,7 @@ export function Header() {
         </motion.button>
       </nav>
 
-      {/* Mobile Navigation */}
+      
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div

@@ -31,7 +31,7 @@ const projects = [
     tags: ["Node.js", "Docker", "AWS"],
     year: "2026",
     icon: Server,
-    github: "https://github.com/thiago-vieira2/electron-automation",
+    github: "", //colocar link do repositorio quando projeto estiver finalizado
     gradient: "from-blue-medium to-blue-light",
   },
   {

@@ -14,7 +14,7 @@ export function HeroSection() {
           opacity: [0.3, 0.5, 0.3]
         }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 -left-32 w-72 h-72 bg-gradient-to-br from-blue-primary/20 to-blue-light/10 rounded-full blur-3xl"
+        style={{ willChange: "transform, opacity" }} className="absolute top-1/4 -left-32 w-72 h-72 bg-gradient-to-br from-blue-primary/20 to-blue-light/10 rounded-full blur-3xl"
       />
       <motion.div
         animate={{ 
@@ -22,7 +22,7 @@ export function HeroSection() {
           opacity: [0.2, 0.4, 0.2]
         }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-1/4 -right-32 w-72 h-72 bg-gradient-to-br from-blue-medium/20 to-blue-dark/10 rounded-full blur-3xl"
+        style={{ willChange: "transform, opacity" }} className="absolute bottom-1/4 -right-32 w-72 h-72 bg-gradient-to-br from-blue-medium/20 to-blue-dark/10 rounded-full blur-3xl"
       />
       
       <div 

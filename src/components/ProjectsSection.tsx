@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github, Building2, FileSpreadsheet, Server, Scissors } from "lucide-react";
+import { ExternalLink, Github, Building2, FileSpreadsheet, Server, Scissors, Cloud} from "lucide-react";
 
 const projects = [
   {
@@ -30,7 +30,7 @@ const projects = [
       "Sistema de gateway de API com rate limiting, autenticação JWT e balanceamento de carga. Suporta milhares de requisições por minuto com alta disponibilidade.",
     tags: ["Node.js", "Docker", "AWS"],
     year: "2026",
-    icon: Server,
+    icon: Cloud,
     github: "", //colocar link do repositorio quando projeto estiver finalizado
     gradient: "from-blue-medium to-blue-light",
   },

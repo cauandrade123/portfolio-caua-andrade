@@ -33,7 +33,7 @@ const stacks = [
     items: [
       { name: "MySQL", icon: Database, description: "Relational DB" },
       { name: "SQL Server", icon: Database, description: "Microsoft DB" },
-      { name: "Redis", icon: Database, description: "Cache & Sessions" },
+      // { name: "Redis", icon: Database, description: "Cache & Sessions" },
     ],
   },
   {

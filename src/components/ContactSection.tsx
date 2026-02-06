@@ -1,6 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Mail, Linkedin, Github, ArrowUpRight, Target } from "lucide-react";
+import { Mail, Linkedin, Github, ArrowUpRight,  Target } from "lucide-react";
 
 const contactLinks = [
 
